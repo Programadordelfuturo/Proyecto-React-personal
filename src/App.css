@@ -1,0 +1,78 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://images.pexels.com/photos/88476/pexels-photo-88476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(20, 250, 180, 0.65);
+  width: 600px;
+  height: 300px;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+@media(max-width: 680px){
+
+  .App{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(20, 250, 180, 0.65);
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    transition: all 0.5s;
+  }
+
+  .write-click {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 40px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .write-click input {
+    box-sizing: content-box;
+    width: 140px;
+    height: 50px;
+  }
+
+  .write-click button {
+    width: 90px;
+  }
+}
+
+.App:hover{
+  box-shadow: 4px 4px 15px 0px rgb(218, 174, 31);
+  transform: scale(1.02);
+}
+
+.App div input {
+  height: 25px;
+  width: 290px;
+  margin-right: 20px;
+}
+
+#link-return-principal {
+  color: rgb(124, 124, 69);
+  font-size: 20px;
+}
