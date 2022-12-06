@@ -4,7 +4,7 @@ import './App.css'
 import Form from './components/Form.jsx'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import About from './pages/About'
-import AboutLink from './components/AboutLink'
+
 
 function App() {
   const [ input, setInput ] = useState('')
@@ -29,9 +29,8 @@ function App() {
             element={
                 <Form handlerClick={handlerClick} handlerInput={handlerInput} text={text}/>
             }></Route>
-          <Route path='/#/About' element={<About />}></Route>
         </Routes>
-        <AboutLink/>
+        <About/>
       </div>
     </Router>
   )
