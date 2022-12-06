@@ -29,7 +29,7 @@ function App() {
             element={
                 <Form handlerClick={handlerClick} handlerInput={handlerInput} text={text}/>
             }></Route>
-            <Route path='/About' element={<About />}/>
+          <Route path='/#/About' element={<About />}></Route>
         </Routes>
         <AboutLink/>
       </div>
