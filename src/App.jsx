@@ -25,14 +25,11 @@ function App() {
         <Routes>
           <Route 
             exact
-            path='/App'
+            path='/'
             element={
-              <>
                 <Form handlerClick={handlerClick} handlerInput={handlerInput} text={text}/>
-              </>
             }></Route>
-
-            <Route path='/About' element={<About />}></Route>
+            <Route path='/About' element={<About />}/>
         </Routes>
         <AboutLink/>
       </div>
